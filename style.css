@@ -1,0 +1,100 @@
+:root {
+    --black: #171321;
+    --dkblue: #0d314b;
+    --plum: #4b0d49;
+    --hotmag: #ff17e4;
+    --magenta: #e310cb;
+    --aqua: #86fbfb;
+    --white: #f7f8fa;
+    --font-size: 1.3rem;
+    --mono: "Oxygen mono", monospace;
+    --sans: Oxygen, sans-serif;
+}
+/* border box model: https://css-tricks.com/box-sizing/ */
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--black);
+    font-family: var(--sans);
+}
+
+/* Home Container */
+
+
+/* navigation */
+ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul li:first-child {
+    margin-right: auto;
+}
+ul li:first-child a {
+    font-size: 150%;
+}
+button {
+    border: none;
+    color: var(--black);
+    background-color: var(--aqua);
+    font-family: var(--mono);
+    padding: 0.3rem 1rem;
+    border-radius: 5px;
+}
+a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: var(--white);
+    font-size: var(--font-size);
+    font-family: var(--mono);
+}
+/* font awesome icon */
+nav [class*="fa-"] {
+    color: var(--white);
+    margin-left: 0.2rem;
+}
+nav input {
+    border: 2px solid white;
+    border-radius: 5px;
+}
+nav div {
+    margin-right: 1rem;
+}
+nav {
+    padding: 0.5rem 1rem;
+    background-color: var(--plum);
+}
+
+/* Hero content */
+#heroContent {
+    padding: 4rem;
+    
+}
+#heroContent p {
+    font-size: 300%;
+    color: var(--white);
+    width: 600px;
+    margin: auto;
+}
+
+/* Top Assets */
+
+#topAssets {
+    background-color: var(--white);
+}
+#topAssets table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
